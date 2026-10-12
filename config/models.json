@@ -1,0 +1,158 @@
+{
+  "version": "1.0",
+  "models": {
+    "gpt-4o": {
+      "model_id": "gpt-4o",
+      "provider": "openai",
+      "display_name": "GPT-4o",
+      "capabilities": [
+        "chat",
+        "code",
+        "vision",
+        "tool_use"
+      ],
+      "max_context_length": 128000,
+      "max_output_tokens": 4096,
+      "input_cost_per_million": 5.0,
+      "output_cost_per_million": 15.0,
+      "avg_latency_ms": 1500,
+      "tokens_per_second": 80,
+      "quality_score": 0.95,
+      "api_endpoint": "https://api.openai.com/v1/chat/completions",
+      "requires_api_key": true,
+      "enabled": true,
+      "priority": 100,
+      "metadata": {}
+    },
+    "gpt-4o-mini": {
+      "model_id": "gpt-4o-mini",
+      "provider": "openai",
+      "display_name": "GPT-4o Mini",
+      "capabilities": [
+        "chat",
+        "code",
+        "tool_use"
+      ],
+      "max_context_length": 128000,
+      "max_output_tokens": 4096,
+      "input_cost_per_million": 0.15,
+      "output_cost_per_million": 0.6,
+      "avg_latency_ms": 1000,
+      "tokens_per_second": 100,
+      "quality_score": 0.85,
+      "api_endpoint": "https://api.openai.com/v1/chat/completions",
+      "requires_api_key": true,
+      "enabled": true,
+      "priority": 90,
+      "metadata": {}
+    },
+    "claude-3.5-sonnet": {
+      "model_id": "claude-3.5-sonnet",
+      "provider": "anthropic",
+      "display_name": "Claude 3.5 Sonnet",
+      "capabilities": [
+        "chat",
+        "code",
+        "long_context"
+      ],
+      "max_context_length": 200000,
+      "max_output_tokens": 8192,
+      "input_cost_per_million": 3.0,
+      "output_cost_per_million": 15.0,
+      "avg_latency_ms": 2000,
+      "tokens_per_second": 60,
+      "quality_score": 0.93,
+      "api_endpoint": "https://api.anthropic.com/v1/messages",
+      "requires_api_key": true,
+      "enabled": true,
+      "priority": 95,
+      "metadata": {}
+    },
+    "deepseek-v3": {
+      "model_id": "deepseek-v3",
+      "provider": "deepseek",
+      "display_name": "DeepSeek V3",
+      "capabilities": [
+        "chat",
+        "code"
+      ],
+      "max_context_length": 64000,
+      "max_output_tokens": 8192,
+      "input_cost_per_million": 0.14,
+      "output_cost_per_million": 0.28,
+      "avg_latency_ms": 1200,
+      "tokens_per_second": 90,
+      "quality_score": 0.88,
+      "api_endpoint": "https://api.deepseek.com/v1/chat/completions",
+      "requires_api_key": true,
+      "enabled": true,
+      "priority": 85,
+      "metadata": {}
+    },
+    "qwen-max": {
+      "model_id": "qwen-max",
+      "provider": "qwen",
+      "display_name": "Qwen Max",
+      "capabilities": [
+        "chat",
+        "code",
+        "function_calling"
+      ],
+      "max_context_length": 32000,
+      "max_output_tokens": 8192,
+      "input_cost_per_million": 0.4,
+      "output_cost_per_million": 1.2,
+      "avg_latency_ms": 1500,
+      "tokens_per_second": 70,
+      "quality_score": 0.87,
+      "api_endpoint": "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation",
+      "requires_api_key": true,
+      "enabled": true,
+      "priority": 80,
+      "metadata": {}
+    },
+    "gemini-2.0-flash": {
+      "model_id": "gemini-2.0-flash",
+      "provider": "gemini",
+      "display_name": "Gemini 2.0 Flash",
+      "capabilities": [
+        "chat",
+        "code",
+        "vision"
+      ],
+      "max_context_length": 1000000,
+      "max_output_tokens": 8192,
+      "input_cost_per_million": 0.1,
+      "output_cost_per_million": 0.4,
+      "avg_latency_ms": 800,
+      "tokens_per_second": 120,
+      "quality_score": 0.86,
+      "api_endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
+      "requires_api_key": true,
+      "enabled": true,
+      "priority": 82,
+      "metadata": {}
+    },
+    "llama-3.1-70b-local": {
+      "model_id": "llama-3.1-70b-local",
+      "provider": "local",
+      "display_name": "Llama 3.1 70B (Local)",
+      "capabilities": [
+        "chat",
+        "code"
+      ],
+      "max_context_length": 8192,
+      "max_output_tokens": 4096,
+      "input_cost_per_million": 0.0,
+      "output_cost_per_million": 0.0,
+      "avg_latency_ms": 3000,
+      "tokens_per_second": 30,
+      "quality_score": 0.82,
+      "api_endpoint": "http://localhost:8080/v1/chat/completions",
+      "requires_api_key": false,
+      "enabled": true,
+      "priority": 50,
+      "metadata": {}
+    }
+  }
+}

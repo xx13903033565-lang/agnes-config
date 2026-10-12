@@ -1,0 +1,75 @@
+# AGI 架构配置 - 集中管理所有阈值和参数
+# 最后更新: 2026-10-12
+
+# ==================== Reflection 模块配置 ====================
+reflection:
+  # 评分阈值
+  excellent_threshold: 0.8      # 优秀分数阈值（触发技能提取）
+  acceptable_threshold: 0.6     # 可接受阈值（低于此值触发重试）
+  
+  # 重试策略
+  max_retries: 3                # 最大重试次数
+  
+  # 评分权重
+  completeness_weight: 0.25     # 完整性权重
+  accuracy_weight: 0.30         # 准确性权重
+  efficiency_weight: 0.20       # 效率权重
+  safety_weight: 0.25           # 安全性权重
+
+# ==================== Planning 模块配置 ====================
+planning:
+  # Plan-and-Execute 策略
+  max_retries: 2                # 计划执行失败后的最大重试次数
+  
+  # ReAct 策略
+  react_max_iterations: 10      # ReAct 循环最大迭代次数
+  action_cycle_detection_window: 3  # 动作循环检测窗口大小
+
+# ==================== Learning 模块配置 ====================
+learning:
+  # 经验检索
+  min_similarity: 0.6           # 最小相似度阈值（ChromaDB 查询）
+  retrieval_top_k: 5            # 默认返回相似经验数量
+  
+  # 技能演化
+  quality_threshold: 0.8        # 技能提取质量阈值
+  min_usage_count: 3            # 技能最小使用次数（才纳入统计）
+  success_rate_threshold: 0.7   # 技能成功率阈值（低于此值标记为待优化）
+
+# ==================== Router 模块配置 ====================
+router:
+  # 路由决策权重
+  quality_weight: 0.4           # 质量权重
+  cost_weight: 0.3              # 成本权重
+  latency_weight: 0.2           # 延迟权重
+  match_weight: 0.1             # 能力匹配权重
+  
+  # 负载均衡
+  max_consecutive_failures: 3   # 连续失败次数阈值（触发熔断）
+  health_check_interval: 60     # 健康检查间隔（秒）
+  
+  # 故障转移
+  max_retries: 2                # 模型调用失败后的最大重试次数
+  
+  # 成本控制
+  default_max_cost_per_million: 10.0  # 默认最大成本（美元/百万token）
+
+# ==================== Memory 模块配置 ====================
+memory:
+  # ChromaDB 配置
+  chromadb_dimension: 1024      # 向量维度（BGE-M3）
+  chromadb_collection_name: "agnes_experiences"
+  
+  # SQLite 配置
+  sqlite_wal_mode: true         # 启用 WAL 模式（提升并发性能）
+  connection_timeout: 30        # 连接超时时间（秒）
+  
+  # 用户偏好
+  autonomous_mode: false        # 自主模式开关（生产环境建议关闭）
+  auto_approve_threshold: 0.9   # 自动批准阈值（仅当 autonomous_mode=true 时生效）
+
+# ==================== 监控与日志配置 ====================
+monitoring:
+  log_level: "INFO"             # 日志级别（DEBUG/INFO/WARNING/ERROR）
+  enable_metrics: true          # 启用指标收集
+  metrics_export_interval: 300  # 指标导出间隔（秒）
