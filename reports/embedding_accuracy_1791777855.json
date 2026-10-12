@@ -1,0 +1,63 @@
+{
+  "timestamp": 1791777855.5194418,
+  "num_test_cases": 5,
+  "keyword_metrics": {
+    "avg_precision_at_5": 0.0,
+    "avg_recall_at_5": 0.0,
+    "avg_mrr": 0.0
+  },
+  "vector_metrics": {
+    "avg_precision_at_5": 0.0,
+    "avg_recall_at_5": 0.0,
+    "avg_mrr": 0.0
+  },
+  "improvements_percent": {
+    "avg_precision_at_5": 0.0,
+    "avg_recall_at_5": 0.0,
+    "avg_mrr": 0.0
+  },
+  "target_improvement": 30.0,
+  "meets_target": false,
+  "detailed_results": [
+    {
+      "query_id": 1,
+      "query": "如何列出项目中的所有 Python 文件",
+      "keyword_p5": 0.0,
+      "vector_p5": 0.0,
+      "keyword_mrr": 0.0,
+      "vector_mrr": 0.0
+    },
+    {
+      "query_id": 2,
+      "query": "安装依赖包的方法",
+      "keyword_p5": 0.0,
+      "vector_p5": 0.0,
+      "keyword_mrr": 0.0,
+      "vector_mrr": 0.0
+    },
+    {
+      "query_id": 3,
+      "query": "统计代码行数",
+      "keyword_p5": 0.0,
+      "vector_p5": 0.0,
+      "keyword_mrr": 0.0,
+      "vector_mrr": 0.0
+    },
+    {
+      "query_id": 4,
+      "query": "搜索特定函数定义",
+      "keyword_p5": 0.0,
+      "vector_p5": 0.0,
+      "keyword_mrr": 0.0,
+      "vector_mrr": 0.0
+    },
+    {
+      "query_id": 5,
+      "query": "生成 Markdown 目录",
+      "keyword_p5": 0.0,
+      "vector_p5": 0.0,
+      "keyword_mrr": 0.0,
+      "vector_mrr": 0.0
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "created_at": 1791777793.2063308,
+  "description": "向量检索准确率测试用例（示例）",
+  "test_cases": [
+    {
+      "query": "如何列出项目中的所有 Python 文件",
+      "expected_ids": [
+        "exp_001",
+        "exp_002",
+        "exp_003",
+        "exp_004",
+        "exp_005"
+      ],
+      "task_type": "file_operation"
+    },
+    {
+      "query": "安装依赖包的方法",
+      "expected_ids": [
+        "exp_006",
+        "exp_007",
+        "exp_008",
+        "exp_009",
+        "exp_010"
+      ],
+      "task_type": "package_management"
+    },
+    {
+      "query": "统计代码行数",
+      "expected_ids": [
+        "exp_011",
+        "exp_012",
+        "exp_013",
+        "exp_014",
+        "exp_015"
+      ],
+      "task_type": "code_analysis"
+    },
+    {
+      "query": "搜索特定函数定义",
+      "expected_ids": [
+        "exp_016",
+        "exp_017",
+        "exp_018",
+        "exp_019",
+        "exp_020"
+      ],
+      "task_type": "code_search"
+    },
+    {
+      "query": "生成 Markdown 目录",
+      "expected_ids": [
+        "exp_021",
+        "exp_022",
+        "exp_023",
+        "exp_024",
+        "exp_025"
+      ],
+      "task_type": "documentation"
+    }
+  ]
+}

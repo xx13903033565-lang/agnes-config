@@ -1,0 +1,1 @@
+{"schema_version":2,"migration_id":"macos-production-v1","source_service":"agnes","target_service":"com.agnes.code.secrets","account":"secrets","outcome":"source_absent","source_snapshot":{"status":"absent"},"source_stability_pending":false,"source_recheck_reason":null,"legacy_source_reconcile_done":true,"entry_count":0,"completed_at":"2026-10-09T09:59:24.934593+00:00"}

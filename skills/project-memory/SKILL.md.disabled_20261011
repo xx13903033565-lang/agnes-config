@@ -1,0 +1,71 @@
+---
+name: project-memory
+description: 'Use at the START and END of any session that operates inside a named project/repository (青瓷店铺、代购店、泓节点, etc.). Auto-isolates memory per project via a single SQLite DB partitioned by workspace_id. Fire when the user says "进入X项目 / 打开X / 继续X" or when a task clearly belongs to a known project; also fire to save a lesson/decision back into that project''s memory.'
+metadata:
+  argument-hint: '[project-root-or-label] [action: enter|list|search|save]'
+---
+
+# project-memory — per-project isolated memory (agnes port of dsh evolve/memory.db)
+
+Goal: each project's memory is physically isolated (one row has `workspace_id`).
+Never leak memory across projects. One DB, N project partitions.
+
+## Where the data lives
+- DB: `$AGNES_MEM_DB` if set, else `~/.agnes/memories/projects.db`.
+- CLI helper: `agnis_memory.py` (bundled in this skill dir; resolve it relative to this skill).
+- If the DB cannot be opened (macOS TCC "Operation not permitted" on ~/.agnes), the agnes
+  process is sandboxed: stop, tell the user to run the deploy command in a normal terminal
+  (their terminal has Full Disk Access), and do NOT write cross-project data.
+
+Resolve the helper once:
+```
+H=~/.agnes/skills/project-memory/agnis_memory.py   # adjust if skills live elsewhere
+DB="${AGNES_MEM_DB:-$HOME/.agnes/memories/projects.db}"
+```
+
+## Determine workspace_id (the project's stable root)
+1. If the user named a project, use its root path exactly as registered in the `projects`
+   table (run: `python3 $H list-projects --db $DB`). Match by label first.
+2. Otherwise use the current working directory / repo root as workspace_id.
+3. If it's a NEW project, register it: `python3 $H register --db $DB --workspace-id <ROOT> --label <NAME>`.
+
+## ACTION: enter (default)
+On entering a project, load only THAT project's active memory — do not read other partitions:
+```
+python3 $H enter --db $DB --workspace-id "$WS"
+```
+- This prints the project's active memories (type/title/description) and bumps usage counts.
+- Summarize into your working context. Cite project memory explicitly.
+- If a referenced project has `quarantined`/`archived` rows, ignore them unless asked.
+
+## ACTION: list / search
+```
+python3 $H list   --db $DB --workspace-id "$WS" [--status active|quarantined|archived]
+python3 $H search --db $DB --workspace-id "$WS" --q "<terms>"        # FTS5, scoped to $WS only
+```
+The CLI always intersects FTS with `workspace_id` so results cannot cross projects.
+
+## ACTION: save (at task end / when a lesson/decision/preference is learned)
+Save into the CURRENT project partition only. Pick the right type:
+- `user` = user preferences / profile facts
+- `feedback` = lessons, pitfalls, "what would break"
+- `reference` = stable reference (paths, ids, config, decisions)
+```
+python3 $H save --db $DB --workspace-id "$WS" --type feedback \
+  --id <short_slug> --title "<one-line>" --body "<detail + source>" [--source-session <id>]
+```
+- Keep bodies concise; note the source (e.g. "Bash", "manual").
+- If a fact conflicts with an existing row, update via:
+  `python3 $H update --db $DB --workspace-id "$WS" --id <slug> --body "<new>"`
+- To quarantine instead of delete: `python3 $H status --db $DB --workspace-id "$WS" --id <slug> --status quarantined`
+
+## Stop conditions
+- DB open failure / TCC block → stop and give the user the deploy command (below); never fake data.
+- No matching project label → fall back to working-dir as workspace_id, register it, and proceed.
+
+## One-time deploy (run in the USER's normal terminal, not the agnes sandbox)
+```
+mkdir -p ~/.agnes/memories
+cp <workspace>/projects.db ~/.agnes/memories/projects.db     # already built + FTS + isolation-verified
+# grant Terminal/iTerm Full Disk Access if the agnes process still can't open the db
+```

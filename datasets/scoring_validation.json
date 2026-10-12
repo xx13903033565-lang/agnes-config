@@ -1,0 +1,407 @@
+{
+  "version": "1.0",
+  "created_at": 1791777730.62185,
+  "description": "LLM 评分一致性验证数据集（示例）",
+  "samples": [
+    {
+      "task_id": "val_000",
+      "task_description": "示例任务 0",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 0 的结果摘要",
+      "human_score": 0.7,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_001",
+      "task_description": "示例任务 1",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 1 的结果摘要",
+      "human_score": 0.73,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_002",
+      "task_description": "示例任务 2",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 2 的结果摘要",
+      "human_score": 0.76,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_003",
+      "task_description": "示例任务 3",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 3 的结果摘要",
+      "human_score": 0.7899999999999999,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_004",
+      "task_description": "示例任务 4",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 4 的结果摘要",
+      "human_score": 0.82,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_005",
+      "task_description": "示例任务 5",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 5 的结果摘要",
+      "human_score": 0.85,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_006",
+      "task_description": "示例任务 6",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 6 的结果摘要",
+      "human_score": 0.8799999999999999,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_007",
+      "task_description": "示例任务 7",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 7 的结果摘要",
+      "human_score": 0.9099999999999999,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_008",
+      "task_description": "示例任务 8",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 8 的结果摘要",
+      "human_score": 0.94,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_009",
+      "task_description": "示例任务 9",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 9 的结果摘要",
+      "human_score": 0.97,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_010",
+      "task_description": "示例任务 10",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 10 的结果摘要",
+      "human_score": 0.7,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_011",
+      "task_description": "示例任务 11",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 11 的结果摘要",
+      "human_score": 0.73,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_012",
+      "task_description": "示例任务 12",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 12 的结果摘要",
+      "human_score": 0.76,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_013",
+      "task_description": "示例任务 13",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 13 的结果摘要",
+      "human_score": 0.7899999999999999,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_014",
+      "task_description": "示例任务 14",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 14 的结果摘要",
+      "human_score": 0.82,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_015",
+      "task_description": "示例任务 15",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 15 的结果摘要",
+      "human_score": 0.85,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_016",
+      "task_description": "示例任务 16",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 16 的结果摘要",
+      "human_score": 0.8799999999999999,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_017",
+      "task_description": "示例任务 17",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 17 的结果摘要",
+      "human_score": 0.9099999999999999,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_018",
+      "task_description": "示例任务 18",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 18 的结果摘要",
+      "human_score": 0.94,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_019",
+      "task_description": "示例任务 19",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 19 的结果摘要",
+      "human_score": 0.97,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_020",
+      "task_description": "示例任务 20",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 20 的结果摘要",
+      "human_score": 0.7,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_021",
+      "task_description": "示例任务 21",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 21 的结果摘要",
+      "human_score": 0.73,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_022",
+      "task_description": "示例任务 22",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 22 的结果摘要",
+      "human_score": 0.76,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_023",
+      "task_description": "示例任务 23",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 23 的结果摘要",
+      "human_score": 0.7899999999999999,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_024",
+      "task_description": "示例任务 24",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 24 的结果摘要",
+      "human_score": 0.82,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_025",
+      "task_description": "示例任务 25",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 25 的结果摘要",
+      "human_score": 0.85,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_026",
+      "task_description": "示例任务 26",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 26 的结果摘要",
+      "human_score": 0.8799999999999999,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_027",
+      "task_description": "示例任务 27",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 27 的结果摘要",
+      "human_score": 0.9099999999999999,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_028",
+      "task_description": "示例任务 28",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 28 的结果摘要",
+      "human_score": 0.94,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_029",
+      "task_description": "示例任务 29",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 29 的结果摘要",
+      "human_score": 0.97,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_030",
+      "task_description": "示例任务 30",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 30 的结果摘要",
+      "human_score": 0.7,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_031",
+      "task_description": "示例任务 31",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 31 的结果摘要",
+      "human_score": 0.73,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_032",
+      "task_description": "示例任务 32",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 32 的结果摘要",
+      "human_score": 0.76,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_033",
+      "task_description": "示例任务 33",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 33 的结果摘要",
+      "human_score": 0.7899999999999999,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_034",
+      "task_description": "示例任务 34",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 34 的结果摘要",
+      "human_score": 0.82,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_035",
+      "task_description": "示例任务 35",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 35 的结果摘要",
+      "human_score": 0.85,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_036",
+      "task_description": "示例任务 36",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 36 的结果摘要",
+      "human_score": 0.8799999999999999,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_037",
+      "task_description": "示例任务 37",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 37 的结果摘要",
+      "human_score": 0.9099999999999999,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_038",
+      "task_description": "示例任务 38",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 38 的结果摘要",
+      "human_score": 0.94,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_039",
+      "task_description": "示例任务 39",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 39 的结果摘要",
+      "human_score": 0.97,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_040",
+      "task_description": "示例任务 40",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 40 的结果摘要",
+      "human_score": 0.7,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_041",
+      "task_description": "示例任务 41",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 41 的结果摘要",
+      "human_score": 0.73,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_042",
+      "task_description": "示例任务 42",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 42 的结果摘要",
+      "human_score": 0.76,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_043",
+      "task_description": "示例任务 43",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 43 的结果摘要",
+      "human_score": 0.7899999999999999,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_044",
+      "task_description": "示例任务 44",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 44 的结果摘要",
+      "human_score": 0.82,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_045",
+      "task_description": "示例任务 45",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 45 的结果摘要",
+      "human_score": 0.85,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_046",
+      "task_description": "示例任务 46",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 46 的结果摘要",
+      "human_score": 0.8799999999999999,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_047",
+      "task_description": "示例任务 47",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 47 的结果摘要",
+      "human_score": 0.9099999999999999,
+      "human_label": "acceptable"
+    },
+    {
+      "task_id": "val_048",
+      "task_description": "示例任务 48",
+      "task_type": "code_generation",
+      "result_summary": "这是任务 48 的结果摘要",
+      "human_score": 0.94,
+      "human_label": "excellent"
+    },
+    {
+      "task_id": "val_049",
+      "task_description": "示例任务 49",
+      "task_type": "file_operation",
+      "result_summary": "这是任务 49 的结果摘要",
+      "human_score": 0.97,
+      "human_label": "acceptable"
+    }
+  ]
+}

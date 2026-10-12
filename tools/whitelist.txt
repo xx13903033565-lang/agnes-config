@@ -1,0 +1,72 @@
+# AgnesCode 终端命令白名单
+# 每行一个命令名前缀，支持常用系统命令和开发工具
+
+# 文件操作
+ls
+cat
+grep
+find
+pwd
+head
+tail
+wc
+sort
+uniq
+file
+touch
+mkdir
+cp
+mv
+
+# 文本处理
+echo
+awk
+sed
+
+# 系统信息
+date
+uptime
+ps
+df
+du
+whoami
+id
+env
+which
+
+# 网络工具
+curl
+wget
+ping
+netstat
+scutil
+
+# 版本控制
+git
+
+# 编程语言
+python3
+node
+npm
+pnpm
+
+# 进程管理
+kill
+pkill
+pgrep
+
+# macOS 系统
+launchctl
+defaults
+codesign
+otool
+lsof
+
+# 权限管理（谨慎）
+chmod
+chown
+
+# GNU coreutils
+timeout
+flock
+seq

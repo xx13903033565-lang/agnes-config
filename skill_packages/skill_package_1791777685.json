@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "created_at": 1791777685.314581,
+  "description": "测试技能包示例",
+  "experiences": [
+    {
+      "task_id": "test_001",
+      "description": "测试任务 1",
+      "type": "file_operation",
+      "result": {
+        "success": true,
+        "output": "test output"
+      },
+      "score": {
+        "final_score": 0.9
+      },
+      "tags": [
+        "test",
+        "demo"
+      ]
+    },
+    {
+      "task_id": "test_002",
+      "description": "测试任务 2",
+      "type": "code_generation",
+      "result": {
+        "success": true,
+        "code": "print('hello')"
+      },
+      "score": {
+        "final_score": 0.85
+      },
+      "tags": [
+        "python",
+        "demo"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "AGI System",
+    "environment": "development",
+    "checksum": "676979ee39ee51020f0271f6acea3e237033f3893459867f350fe57e2396d2fe"
+  }
+}

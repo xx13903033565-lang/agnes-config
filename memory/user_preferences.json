@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "language": "zh-CN",
+  "autonomous_mode": false,
+  "max_autonomous_steps": 10,
+  "require_approval_for": [
+    "write_operations",
+    "network_requests",
+    "skill_installation"
+  ],
+  "model_preferences": {
+    "default": "agnes-3.0-flash",
+    "planning": "agnes-2.5-pro",
+    "reflection": "agnes-2.5-pro",
+    "embedding": "BGE-M3"
+  },
+  "budget": {
+    "daily_limit_usd": 5.0,
+    "alert_at_percent": 80
+  },
+  "learning": {
+    "auto_extract_patterns": true,
+    "min_success_count_before_publish": 5,
+    "review_before_publish": true
+  },
+  "memory": {
+    "retention_days": 90,
+    "max_vector_entries": 100000,
+    "similarity_threshold": 0.7
+  }
+}

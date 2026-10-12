@@ -1,0 +1,56 @@
+---
+name: enter-project
+description: '进入某项目时自动读取该项目在 泓记 里的独立隔离记忆（588条现成库，跨项目零泄漏）。零部署：agnis 只读，不写数据库、不要求用户跑命令。触发：用户说「进入X项目/打开X/继续X/看X店」或工作目录在已知项目路径下。'
+---
+
+# enter-project — 进入项目即自动读取该项目的独立记忆（零部署，agnis 自己闭环）
+
+数据源（agnis 只读，绝不写入受保护位置）：
+  ~/泓记/30_资源/Qoder记忆备份/projects/<项目编码>/
+这是现成的、按项目物理隔离的记忆库（588 条 .md，跨项目 0 泄漏已验证）。
+
+## 触发
+用户说「进入X项目 / 打开X / 继续X / 看X店」，或当前工作目录落在某项目路径下 → 自动执行「进入」。
+
+## 项目编码规则（与目录名一致）
+把项目根的**绝对路径**去掉开头的 `/`，再把所有剩余的 `/` 换成 `-`，其余字符（含空格、中文）原样保留。
+  /Users/billtse/Desktop/青瓷店铺/瓯江 天猫
+  → Users-billtse-Desktop-青瓷店铺-瓯江 天猫
+
+已知项目速查（编码 → 条数）：
+  瓯江 天猫        → Users-billtse-Desktop-青瓷店铺-瓯江 天猫            (50)
+  青颜青瓷坊 抖店  → Users-billtse-Desktop-青瓷店铺-青颜青瓷坊 抖店      (149)
+  瓯江 京东        → Users-billtse-Desktop-青瓷店铺-瓯江 京东            (28)
+  Ceramic Heaven   → Users-billtse-Desktop-青瓷店铺-Ceramic Heaven TikTok(21)
+  小雅 拼多多      → Users-billtse-Desktop-青瓷店铺-小雅瓷器 拼多多       (13)
+  冲儿的店 小红书  → Users-billtse-Desktop-青瓷店铺-冲儿的店 小红书      (10)
+  泓节点代理       → Users-billtse-Desktop-泓节点代理                    (70)
+  代购店          → Users-billtse-Desktop-人个 店铺-代购店               (5)
+  全局兜底        → Qoder-Chats                                          (139)
+
+## ACTION: 进入（默认）
+1. 定项目根 = 用户指定路径 或 当前工作目录。按编码规则算出编码。
+2. `PROJ=~/泓记/30_资源/Qoder记忆备份/projects/<编码>`
+3. 先 `ls "$PROJ"` 确认目录存在（不存在→ 提示「该项目无独立记忆」，用全局 Qoder-Chats 兜底）。**绝不创建/写入。**
+4. 按类别读，省 token：
+   ```
+   for f in "$PROJ"/*/*.md; do
+     printf '### %s/%s\n' "$(basename "$(dirname "$f")")" "$(basename "$f")"
+     head -12 "$f"; printf '\n'
+   done
+   ```
+   - 条数 >10：只列各文件 title + front-matter 的 keywords，不展开 body。
+   - 单轮最多展开 10 条 body；其余只列标题。
+   - 优先类别：common_pitfalls_experience、important_decision_experience、development_practice_specification。
+5. 汇总一句：「已加载 <项目编码> 的 N 条独立记忆（踩坑a/决策b/规范c…）」。
+6. **隔离铁律：只读本项目的编码目录，绝不跨项目读/搜**（隔离靠物理目录实现）。
+
+## ACTION: 搜索某项目内
+   `grep -rl "<词>" "$PROJ" | head`（只在 $PROJ 内搜，不跨目录）。
+
+## 写侧（agnis TCC 限制，诚实说明）
+agnis 写不了 ~/泓记、~/Desktop（Operation not permitted）。本 skill 只「读/用」每个项目的隔离记忆，已可闭环。
+要「把新教训写回项目记忆」：agnis 先把结论写到当前工作区 .agnes/work/notes/<编码>.md，末尾提示「新记忆已暂存工作区，待经 泓记 软件/NAS 同步机制入库」；不要假装已写入 泓记。
+
+## 省 token（老规矩）
+缓存命中优先、能短不长篇、失败 2 次停手。单次进入只读一个项目目录。
