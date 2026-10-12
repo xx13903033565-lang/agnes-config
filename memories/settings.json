@@ -6,8 +6,8 @@
   "include_workspace_memories": true,
   "disable_generation_on_external_context": false,
   "min_rate_limit_remaining_percent": 20,
-  "extract_model": null,
-  "consolidation_model": null,
+  "extract_model": "agentic-3b",
+  "consolidation_model": "agentic-3b",
   "max_injected_entries": 12,
   "max_injected_tokens": 1200
 }
