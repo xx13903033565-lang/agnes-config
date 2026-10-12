@@ -316,13 +316,6 @@ extensions:
     envs: {}
     env_keys: []
     timeout: 300
-  apps:
-    enabled: true
-    type: platform
-    name: apps
-    description: Create and manage custom Agnes apps through chat. Apps are HTML/CSS/JavaScript and run in sandboxed windows.
-    display_name: Apps
-    bundled: true
   code_execution:
     enabled: true
     type: platform
@@ -330,31 +323,41 @@ extensions:
     description: Agnes will make extension calls through code execution, saving tokens
     display_name: Code Mode
     bundled: false
+  apps:
+    enabled: true
+    type: platform
+    name: apps
+    description: Create and manage custom Agnes apps through chat. Apps are HTML/CSS/JavaScript and run in sandboxed windows.
+    display_name: Apps
+    bundled: true
 AGNES_MODEL_LIMITS:
-  agnes-2.5-pro:
+  glm-5.2:
+    max_input_tokens: 1000000
+    max_output_tokens: 131072
+  agnes-2.5-flash:
     max_input_tokens: 512000
     max_output_tokens: 65536
-  agnes-3.0-flash:
-    max_input_tokens: 512000
-    max_output_tokens: 65536
-  deepseek-v4-pro:
+  deepseek-v4.1-flash:
     max_input_tokens: 1000000
     max_output_tokens: 393216
   auto:
     max_input_tokens: 512000
     max_output_tokens: 65536
-  agnes-2.5-flash:
-    max_input_tokens: 512000
-    max_output_tokens: 65536
-  glm-5.2:
-    max_input_tokens: 1000000
-    max_output_tokens: 131072
-  deepseek-v4.1-flash:
-    max_input_tokens: 1000000
-    max_output_tokens: 393216
   kimi-k3:
     max_input_tokens: 1048576
     max_output_tokens: 131072
+  glm-5.3:
+    max_input_tokens: 1000000
+    max_output_tokens: 131072
+  deepseek-v4-pro:
+    max_input_tokens: 1000000
+    max_output_tokens: 393216
+  agnes-3.0-flash:
+    max_input_tokens: 512000
+    max_output_tokens: 65536
+  agnes-2.5-pro:
+    max_input_tokens: 512000
+    max_output_tokens: 65536
 active_provider: agnes
 providers:
   agnes:
@@ -367,7 +370,7 @@ providers:
       initial_delay_ms: 1000
     keepalive_interval_seconds: 30
 AGNES_MAX_TURNS: 200
-AGNES_MAX_CONCURRENT_TASKS: 2
+AGNES_MAX_CONCURRENT_TASKS: 5
 AGNES_MEMORY_LIMIT_MB: 2048
 AGNES_GC_INTERVAL_SECONDS: 300
 AGNES_V8_FLAGS: --max-old-space-size=2048 --optimize-for-size --gc-interval=100
@@ -381,14 +384,15 @@ AGNES_TERMINAL_TIMEOUT: 30
 AGNES_TERMINAL_WHITELIST: /Users/billtse/.agnes/tools/whitelist.txt
 AGNES_RECIPE_PATH: /Users/billtse/.agnes/recipes
 AGNES_MODEL_AUTO_COMPACT_THRESHOLDS:
+  auto: 0.8
+  agnes-3.0-flash: 0.6
+  agnes-2.5-flash: 0.6
+  agnes-2.5-pro: 0.6
+  glm-5.3: 0.8
+  glm-5.2: 0.8
   kimi-k3: 0.8
   deepseek-v4-pro: 0.8
-  auto: 0.8
-  glm-5.2: 0.8
-  agnes-2.5-flash: 0.6
   deepseek-v4.1-flash: 0.8
-  agnes-3.0-flash: 0.6
-  agnes-2.5-pro: 0.6
 connected_app_runtime_revisions:
   figma: 1
   notion: 1
