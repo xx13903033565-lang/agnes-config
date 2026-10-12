@@ -34,6 +34,7 @@
 | **B10** | session lock 清理 | 已存在 | ✅ cleanup_session_locks.sh TTL 30 分钟 |
 | **B11** | compaction 监控 | 已创建 | ✅ monitor_B11_compaction_threshold.sh --daemon |
 | **B18** | host actions wrapper | 已存在 | ✅ host_actions_wrapper.sh 模拟系统操作 |
+| **D3** | 旧 runtime-info 回收 | 2026-10-12 17:55 | ✅ 删除 ~/.qoder-cn/.bin/ 下 3 份旧文件 |
 
 ---
 
