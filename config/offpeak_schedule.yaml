@@ -1,0 +1,59 @@
+# DSH 错峰调度配置
+# 用于批量重活（逐款改标题/多店盘库存）的谷时窗口执行
+
+offpeak_windows:
+  # 工作日谷时窗口
+  weekday:
+    - start: "19:00"
+      end: "23:59"
+      label: "晚间谷时"
+    - start: "00:00"
+      end: "08:00"
+      label: "凌晨谷时"
+  
+  # 周末全天（流量低）
+  weekend:
+    - start: "00:00"
+      end: "23:59"
+      label: "周末全时段"
+
+# 任务分类
+task_categories:
+  heavy:
+    - "批量改标题"
+    - "多店盘库存"
+    - "全量数据读取"
+    - "大文件处理"
+    description: "预计耗时 >5 分钟或调用 LLM >10 次的任务"
+    
+  light:
+    - "单款查询"
+    - "小文件读写"
+    - "简单计算"
+    description: "预计耗时 <1 分钟的任务"
+
+# 调度策略
+scheduling_policy:
+  # 重活强制谷时执行
+  heavy_tasks_offpeak_only: true
+  
+  # 轻活峰时执行（默认）
+  light_tasks_peak_allowed: true
+  
+  # 批量任务分片大小（避免一次性撑爆）
+  batch_chunk_size: 10
+  
+  # 分片间隔（秒）
+  chunk_interval_seconds: 30
+
+# 验收指标
+metrics:
+  # 重活应落在谷时区间的比例
+  heavy_tasks_offpeak_ratio: 0.9
+  
+  # provider call 分布检查命令
+  check_command: |
+    grep "llm.*timestamp" ~/.agnes/state/logs/llm/*/main.jsonl | \
+    awk -F'"' '{print $4}' | \
+    cut -d'_' -f2 | \
+    sort | uniq -c | sort -rn
