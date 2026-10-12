@@ -193,47 +193,22 @@ def create_user_preferences(memory_dir):
         print(f"ℹ️  用户偏好文件已存在: {prefs_path}")
 
 def update_main_config():
-    """更新主配置文件"""
+    """更新主配置文件——只出报告，⛔裸写正本（config.yaml 的写入必须走 agnes_config_guard.py）。"""
     config_path = Path.home() / '.agnes' / 'config' / 'config.yaml'
-    
+
     if not config_path.exists():
-        print(f"❌ 配置文件不存在: {config_path}")
+        print("❌ 配置文件不存在: %s" % config_path)
         return False
-    
-    # 读取现有配置
+
     with open(config_path, 'r', encoding='utf-8') as f:
         content = f.read()
-    
-    # 检查是否已添加 AGI 配置
+
     if 'agi_core:' in content:
         print("ℹ️  AGI 配置已存在，跳过")
         return True
-    
-    # 添加 AGI 核心配置
-    agi_config = """
-# ===== AGI 核心配置 =====
-agi_core:
-  version: "1.0"
-  enabled_modules:
-    - planner
-    - memory
-    - reflection
-    - learning
-    - model_router
-  
-  # 全局开关
-  autonomous_mode: false
-  max_autonomous_steps: 10
-  require_approval_for:
-    - write_operations
-    - network_requests
-    - skill_installation
-"""
-    
-    with open(config_path, 'a', encoding='utf-8') as f:
-        f.write(agi_config)
-    
-    print(f"✅ 主配置文件已更新: {config_path}")
+
+    print("✅ 检测到 config.yaml 里尚无 agi_core 块；要加这块请走：")
+    print("   python3 ~/.agnes/scripts/agnes_config_guard.py --write-from <含 agi_core 块的候选文件>")
     return True
 
 def main():

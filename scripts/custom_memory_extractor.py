@@ -26,11 +26,14 @@ from datetime import datetime, timedelta
 
 MEMORY_DIR = Path.home() / ".agnes" / "memories" / "custom"
 SESSIONS_DB = Path.home() / ".agnes" / "data" / "sessions" / "sessions.db"
-PROCESSED_FILE = Path.home() / ".agnes" / "memories" / "processed_sessions.json"
+# 引擎自有状态文件：⛔本机脚本代写（名册由 agnes_config_guard.py --audit 现扫）
+ENGINE_OWNED = {Path.home() / ".agnes" / "memories" / "processed_sessions.json"}
+# 本脚本的侧车文件
+PROCESSED_FILE = MEMORY_DIR / "extractor_processed.json"
 
 
 def load_processed_sessions() -> set:
-    """Load set of already processed session IDs."""
+    """Load set of already processed session IDs（从本脚本自己的侧车文件读，⛔碰引擎状态文件）。"""
     if PROCESSED_FILE.exists():
         try:
             with open(PROCESSED_FILE, "r", encoding="utf-8") as f:
@@ -42,10 +45,10 @@ def load_processed_sessions() -> set:
 
 
 def save_processed_session(session_id: str):
-    """Mark session as processed to avoid duplicates."""
+    """Mark session as processed to avoid duplicates——写本脚本自己的侧车文件。"""
     processed = load_processed_sessions()
     processed.add(session_id)
-    
+
     PROCESSED_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(PROCESSED_FILE, "w", encoding="utf-8") as f:
         json.dump({"session_ids": list(processed), "last_updated": datetime.now().isoformat()}, f, ensure_ascii=False, indent=2)
