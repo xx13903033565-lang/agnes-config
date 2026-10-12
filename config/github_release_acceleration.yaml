@@ -1,0 +1,28 @@
+# GitHub Release 大文件加速配置
+# 用于 AgnesCode 自动更新和依赖下载
+
+rules:
+  # 域名匹配规则（clash 格式）
+  - DOMAIN-SUFFIX,github.com
+  - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,github.io
+  - DOMAIN-KEYWORD,release
+  
+  # 需要加速的具体域名
+  accelerated_domains:
+    - release-assets.githubusercontent.com
+    - objects.githubusercontent.com
+    - *.blob.core.windows.net  # Azure CDN
+    - github.com
+    - api.github.com
+    
+  # 国内镜像前缀（备选方案）
+  mirrors:
+    ghproxy: "https://ghproxy.com/"
+    jsdelivr: "https://cdn.jsdelivr.net/gh/"
+    
+  # 使用建议
+  notes:
+    - "优先走 clash 高速节点"
+    - "失败时自动切换到 ghproxy/jsdelivr 镜像"
+    - "大文件（>10MB）自动启用加速"
