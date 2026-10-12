@@ -324,7 +324,7 @@ extensions:
     display_name: Code Mode
     bundled: false
   apps:
-    enabled: false
+    enabled: true
     type: platform
     name: apps
     description: Create and manage custom Agnes apps through chat. Apps are HTML/CSS/JavaScript and run in sandboxed windows.
