@@ -1,0 +1,48 @@
+# AgnesCode Skill Manifest Template
+# 复制此文件到你的工具目录并修改
+
+name: my-custom-tool          # 工具唯一标识（小写+连字符）
+version: 0.1.0                # 语义化版本
+description: >                # 简短描述（≤120 字）
+  这是一个自定义工具示例，用于演示 AgnesCode 扩展机制。
+author: your-name             # 作者名
+license: MIT                  # 许可证
+
+# 入口脚本（相对于 manifest 所在目录）
+entrypoint: tool.ts
+
+# 参数定义（JSON Schema 格式）
+parameters:
+  type: object
+  properties:
+    input_path:
+      type: string
+      description: 输入文件路径
+    output_format:
+      type: string
+      enum: [json, csv, markdown]
+      default: json
+  required:
+    - input_path
+
+# 依赖声明
+dependencies:
+  - deno/std@0.208.0
+  - npm:lodash@4.17.21
+
+# 权限需求（Deno 沙箱）
+permissions:
+  read:
+    - ~/.agnes/data/
+  write: []                   # 建议留空，使用 host-actions 模式
+  net: false                  # 是否需要网络访问
+
+# 触发方式
+triggers:
+  - slash_command: /my-tool   # 斜杠命令入口
+  - keyword: ["分析", "处理"]  # 关键词触发（可选）
+
+# 元数据
+tags: [data-processing, custom]
+created_at: 2026-10-12
+updated_at: 2026-10-12
