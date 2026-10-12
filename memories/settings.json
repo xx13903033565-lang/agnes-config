@@ -2,7 +2,7 @@
   "enabled": true,
   "use_memories": true,
   "generate_memories": true,
-  "require_preview_before_apply": true,
+  "require_preview_before_apply": false,
   "include_workspace_memories": true,
   "disable_generation_on_external_context": false,
   "min_rate_limit_remaining_percent": 20,

@@ -331,24 +331,24 @@ extensions:
     display_name: Apps
     bundled: true
 AGNES_MODEL_LIMITS:
+  agnes-2.5-pro:
+    max_input_tokens: 512000
+    max_output_tokens: 65536
+  agnes-2.5-flash:
+    max_input_tokens: 512000
+    max_output_tokens: 65536
   kimi-k3:
     max_input_tokens: 1048576
     max_output_tokens: 131072
-  glm-5.3:
-    max_input_tokens: 1000000
-    max_output_tokens: 131072
-  agnes-2.5-pro:
+  agnes-3.0-flash:
     max_input_tokens: 512000
     max_output_tokens: 65536
   deepseek-v4.1-flash:
     max_input_tokens: 1000000
     max_output_tokens: 393216
-  agnes-2.5-flash:
-    max_input_tokens: 512000
-    max_output_tokens: 65536
-  agnes-3.0-flash:
-    max_input_tokens: 512000
-    max_output_tokens: 65536
+  glm-5.3:
+    max_input_tokens: 1000000
+    max_output_tokens: 131072
   auto:
     max_input_tokens: 512000
     max_output_tokens: 65536
@@ -381,14 +381,14 @@ AGNES_TERMINAL_TIMEOUT: 30
 AGNES_TERMINAL_WHITELIST: /Users/billtse/.agnes/tools/whitelist.txt
 AGNES_RECIPE_PATH: /Users/billtse/.agnes/recipes
 AGNES_MODEL_AUTO_COMPACT_THRESHOLDS:
-  agnes-2.5-pro: 0.6
-  auto: 0.8
-  kimi-k3: 0.8
-  agnes-3.0-flash: 0.6
   glm-5.3: 0.8
-  deepseek-v4-pro: 0.8
   agnes-2.5-flash: 0.6
+  agnes-3.0-flash: 0.6
+  agnes-2.5-pro: 0.6
+  kimi-k3: 0.8
   deepseek-v4.1-flash: 0.8
+  deepseek-v4-pro: 0.8
+  auto: 0.8
 connected_app_runtime_revisions:
   figma: 1
   notion: 1
