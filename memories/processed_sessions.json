@@ -1,37 +1,55 @@
 {
-  "20261011_159": {
-    "session_id": "20261011_159",
+  "20261012_1": {
+    "session_id": "20261012_1",
     "last_processed_message_index": 0,
-    "last_processed_hash": "8bd7a85acf72f2780e1bd55ae076326f832768e00fba2e52ec521695769084d3",
-    "last_processed_at": "2026-10-11T15:20:33.896865Z",
-    "last_session_updated_at": "2026-10-11T15:09:19Z",
+    "last_processed_hash": "8f34771a7d5c7a5fbb8532f8198eb5cdf7e2320c02ea023f7a40fe0dc57b93d3",
+    "last_processed_at": "2026-10-12T00:07:01.317615Z",
+    "last_session_updated_at": "2026-10-12T00:00:27Z",
     "last_skip_reason": "session_too_short",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
-  "20261011_32": {
-    "session_id": "20261011_32",
-    "last_processed_message_index": 35,
-    "last_processed_hash": "4e7998e440a02a7f05ad83678998f94b49f464665295fcf4c530c7675a12b6cd",
-    "last_processed_at": "2026-10-11T15:00:33.069046Z",
-    "last_session_updated_at": "2026-10-11T14:51:58Z",
-    "last_skip_reason": "external_context_detected",
+  "20261011_64": {
+    "session_id": "20261011_64",
+    "last_processed_message_index": 11,
+    "last_processed_hash": "169edae9b96b9e91ed26a42a3ee4d76d43bf1de4697a71383ad48357b31995c0",
+    "last_processed_at": "2026-10-11T14:10:30.672867Z",
+    "last_session_updated_at": "2026-10-11T13:38:16Z",
+    "last_skip_reason": "unchanged_since_last_processed",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
-  "20261011_163": {
-    "session_id": "20261011_163",
+  "20261009_1": {
+    "session_id": "20261009_1",
+    "last_processed_message_index": 4,
+    "last_processed_hash": "19194f1f6516aba19668688ec5902de1c7f0afdfaa905b42f9882752e04855e2",
+    "last_processed_at": "2026-10-09T15:22:34.956635Z",
+    "last_session_updated_at": "2026-10-09T15:07:17Z",
+    "last_skip_reason": null,
+    "last_generation_run_id": "memrun_01a12140efdb73a1a82b9e8eb24f6575"
+  },
+  "20261011_160": {
+    "session_id": "20261011_160",
     "last_processed_message_index": 0,
-    "last_processed_hash": "fcd22ddf7414736443369637a2555427d1d661b3fd2c878ad2ae49b19a451baa",
-    "last_processed_at": "2026-10-12T00:00:20.487459Z",
-    "last_session_updated_at": "2026-10-11T23:55:13Z",
+    "last_processed_hash": "ef301baa898af8fa90821a68b3c9567ee87d413addc20694fc848ee003fefe07",
+    "last_processed_at": "2026-10-11T23:48:53.959258Z",
+    "last_session_updated_at": "2026-10-11T23:43:23Z",
     "last_skip_reason": "session_too_short",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
-  "20261009_27": {
-    "session_id": "20261009_27",
-    "last_processed_message_index": 24,
-    "last_processed_hash": "d741254eb8271a3845a6b364f01be3f15c3a182f0f4110e00cf22527c4a18730",
-    "last_processed_at": "2026-10-10T23:18:18.033355Z",
-    "last_session_updated_at": "2026-10-10T22:43:10Z",
+  "20261009_10": {
+    "session_id": "20261009_10",
+    "last_processed_message_index": 2,
+    "last_processed_hash": "db01839ca8d01a9f8789ee2576528283b8cfc154cf9dcb6a0a7126738e8c0742",
+    "last_processed_at": "2026-10-09T16:31:30.201611Z",
+    "last_session_updated_at": "2026-10-09T16:07:20Z",
+    "last_skip_reason": "unchanged_since_last_processed",
+    "last_generation_run_id": "memrun_01a12308a9f47f409780f78aeca0a8f2"
+  },
+  "20261012_3": {
+    "session_id": "20261012_3",
+    "last_processed_message_index": 4,
+    "last_processed_hash": "ac959f2a1ed83b91897279f47b6432fe95ca03749638fcfa39ed950ba448fa6b",
+    "last_processed_at": "2026-10-12T02:35:01.348111Z",
+    "last_session_updated_at": "2026-10-12T02:29:23Z",
     "last_skip_reason": "unchanged_since_last_processed",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
@@ -44,92 +62,38 @@
     "last_skip_reason": "unchanged_since_last_processed",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
-  "20261011_33": {
-    "session_id": "20261011_33",
-    "last_processed_message_index": 4,
-    "last_processed_hash": "227732a825f7575170ec4737343f10ef95bdd173811033af0ac6aa923ecdcafe",
-    "last_processed_at": "2026-10-11T05:10:31.163237Z",
-    "last_session_updated_at": "2026-10-11T04:59:36Z",
-    "last_skip_reason": "unchanged_since_last_processed",
-    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
-  },
   "20261011_162": {
     "session_id": "20261011_162",
     "last_processed_message_index": 0,
     "last_processed_hash": "6bb1fe1f11e936432065ba977c2f3c999cd08b8dfa751a12ff3afe54fd008d1b",
-    "last_processed_at": "2026-10-11T23:54:39.978259Z",
+    "last_processed_at": "2026-10-05T07:10:48.862175Z",
     "last_session_updated_at": "2026-10-11T23:49:10Z",
     "last_skip_reason": "session_too_short",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
-  "20261009_3": {
-    "session_id": "20261009_3",
-    "last_processed_message_index": 5,
-    "last_processed_hash": "6baed99937acdb2d3c1491fa49bb1441d5feeb6fc90d38d94b64d80d8674f9e3",
-    "last_processed_at": "2026-10-09T16:44:12.346278Z",
-    "last_session_updated_at": "2026-10-09T15:24:28Z",
-    "last_skip_reason": "unchanged_since_last_processed",
-    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
-  },
-  "20261009_4": {
-    "session_id": "20261009_4",
-    "last_processed_message_index": 10,
-    "last_processed_hash": "72ed8ccce3354ee0f3d867c40a23b92c748c2d5379ef8354e356286756ff039d",
-    "last_processed_at": "2026-10-10T01:49:20.466820Z",
-    "last_session_updated_at": "2026-10-10T00:41:59Z",
-    "last_skip_reason": "unchanged_since_last_processed",
-    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
-  },
-  "20261012_4": {
-    "session_id": "20261012_4",
-    "last_processed_message_index": 8,
-    "last_processed_hash": "b214af7a54a7c3b5ac601938159cc63aa5e18c9d830e473c2ad56161bf85d37d",
-    "last_processed_at": "2026-10-12T05:49:11.257842Z",
-    "last_session_updated_at": "2026-10-12T05:27:53Z",
-    "last_skip_reason": "session_active_recently",
-    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
-  },
-  "20261011_64": {
-    "session_id": "20261011_64",
-    "last_processed_message_index": 11,
-    "last_processed_hash": "169edae9b96b9e91ed26a42a3ee4d76d43bf1de4697a71383ad48357b31995c0",
-    "last_processed_at": "2026-10-11T14:10:30.672867Z",
-    "last_session_updated_at": "2026-10-11T13:38:16Z",
-    "last_skip_reason": "unchanged_since_last_processed",
-    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
-  },
-  "20261011_13": {
-    "session_id": "20261011_13",
-    "last_processed_message_index": 29,
-    "last_processed_hash": "896c3815499b78947693f6f9fa1202c51579d36af86e55f3b6e2a22386b11cab",
-    "last_processed_at": "2026-10-11T09:08:37.391358Z",
-    "last_session_updated_at": "2026-10-11T07:42:49Z",
-    "last_skip_reason": "unchanged_since_last_processed",
-    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
-  },
-  "20261009_10": {
-    "session_id": "20261009_10",
-    "last_processed_message_index": 2,
-    "last_processed_hash": "db01839ca8d01a9f8789ee2576528283b8cfc154cf9dcb6a0a7126738e8c0742",
-    "last_processed_at": "2026-10-09T16:31:30.201611Z",
-    "last_session_updated_at": "2026-10-09T16:07:20Z",
-    "last_skip_reason": "unchanged_since_last_processed",
-    "last_generation_run_id": "memrun_01a12308a9f47f409780f78aeca0a8f2"
-  },
-  "20261012_2": {
-    "session_id": "20261012_2",
+  "20261011_159": {
+    "session_id": "20261011_159",
     "last_processed_message_index": 0,
-    "last_processed_hash": "e52244592872cb5bbd6d3741211c49eb1bc2c56d9e3091d13aff756648afb54f",
-    "last_processed_at": "2026-10-12T00:27:03.160397Z",
-    "last_session_updated_at": "2026-10-12T00:13:14Z",
+    "last_processed_hash": "8bd7a85acf72f2780e1bd55ae076326f832768e00fba2e52ec521695769084d3",
+    "last_processed_at": "2026-10-05T07:10:48.862070Z",
+    "last_session_updated_at": "2026-10-11T15:09:19Z",
     "last_skip_reason": "session_too_short",
+    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
+  },
+  "20261011_121": {
+    "session_id": "20261011_121",
+    "last_processed_message_index": 8,
+    "last_processed_hash": "a5db1493673f1435604f980eb29c793a7287a3daa9dee670216ed5bc6d965b12",
+    "last_processed_at": "2026-10-11T13:49:34.649373Z",
+    "last_session_updated_at": "2026-10-11T13:36:44Z",
+    "last_skip_reason": "unchanged_since_last_processed",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
   "20261011_161": {
     "session_id": "20261011_161",
     "last_processed_message_index": 0,
     "last_processed_hash": "73458636ea34b3dc039cbcf24e81e314a019d5ca9ae13eeebe378b283d48809a",
-    "last_processed_at": "2026-10-11T23:54:39.987189Z",
+    "last_processed_at": "2026-10-05T07:10:48.862180Z",
     "last_session_updated_at": "2026-10-11T23:47:53Z",
     "last_skip_reason": "session_too_short",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
@@ -143,39 +107,84 @@
     "last_skip_reason": "external_context_detected",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
-  "20261009_9": {
-    "session_id": "20261009_9",
-    "last_processed_message_index": 11,
-    "last_processed_hash": "cd7fc98cc39f5398e2be4e12b73d4f18ecaf38da9882382f7dc221fc48f2cb29",
-    "last_processed_at": "2026-10-10T01:15:12.593171Z",
-    "last_session_updated_at": "2026-10-10T00:52:03Z",
-    "last_skip_reason": "unchanged_since_last_processed",
-    "last_generation_run_id": "memrun_01a128efd66671518f9c69de31cac005"
+  "20261012_24": {
+    "session_id": "20261012_24",
+    "last_processed_message_index": 2,
+    "last_processed_hash": "16d64c447b7f27251dba98fad2f9ca63068b0dc34440729b2aa9d7bd08a0cd85",
+    "last_processed_at": "2026-10-12T08:01:52.924978Z",
+    "last_session_updated_at": "2026-10-12T07:48:22Z",
+    "last_skip_reason": "session_active_recently",
+    "last_generation_run_id": "memrun_01a12f2b0d0272c3b3307a45bf7951f6"
   },
-  "20261009_15": {
-    "session_id": "20261009_15",
-    "last_processed_message_index": 12,
-    "last_processed_hash": "933cd6163acf8abd513e3eedabcc5bf91ba56df1bcbf7e0ff4cc5d8f801586cd",
-    "last_processed_at": "2026-10-10T13:14:29.878607Z",
-    "last_session_updated_at": "2026-10-10T13:02:45Z",
-    "last_skip_reason": "unchanged_since_last_processed",
-    "last_generation_run_id": "memrun_01a128efd66671518f9c69de31cac005"
+  "20261009_42": {
+    "session_id": "20261009_42",
+    "last_processed_message_index": 0,
+    "last_processed_hash": "a1ae500c9ffe3f21f273baca21b54ac633cc37621da28eb0b78de91eda17fbb2",
+    "last_processed_at": "2026-10-10T00:52:50.630879Z",
+    "last_session_updated_at": "2026-10-10T00:40:01Z",
+    "last_skip_reason": "session_too_short",
+    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
-  "20261009_5": {
-    "session_id": "20261009_5",
-    "last_processed_message_index": 7,
-    "last_processed_hash": "0e58daf54b12755880c9257430a743f70b3aea199ada89a0272765d3012aea6b",
-    "last_processed_at": "2026-10-10T00:42:23.726616Z",
-    "last_session_updated_at": "2026-10-10T00:25:02Z",
+  "20261011_33": {
+    "session_id": "20261011_33",
+    "last_processed_message_index": 4,
+    "last_processed_hash": "227732a825f7575170ec4737343f10ef95bdd173811033af0ac6aa923ecdcafe",
+    "last_processed_at": "2026-10-11T05:10:31.163237Z",
+    "last_session_updated_at": "2026-10-11T04:59:36Z",
     "last_skip_reason": "unchanged_since_last_processed",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
-  "20261011_121": {
-    "session_id": "20261011_121",
-    "last_processed_message_index": 8,
-    "last_processed_hash": "a5db1493673f1435604f980eb29c793a7287a3daa9dee670216ed5bc6d965b12",
-    "last_processed_at": "2026-10-11T13:49:34.649373Z",
-    "last_session_updated_at": "2026-10-11T13:36:44Z",
+  "20261011_13": {
+    "session_id": "20261011_13",
+    "last_processed_message_index": 29,
+    "last_processed_hash": "896c3815499b78947693f6f9fa1202c51579d36af86e55f3b6e2a22386b11cab",
+    "last_processed_at": "2026-10-11T09:08:37.391358Z",
+    "last_session_updated_at": "2026-10-11T07:42:49Z",
+    "last_skip_reason": "unchanged_since_last_processed",
+    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
+  },
+  "20261011_32": {
+    "session_id": "20261011_32",
+    "last_processed_message_index": 35,
+    "last_processed_hash": "4e7998e440a02a7f05ad83678998f94b49f464665295fcf4c530c7675a12b6cd",
+    "last_processed_at": "2026-10-11T15:00:33.069046Z",
+    "last_session_updated_at": "2026-10-11T14:51:58Z",
+    "last_skip_reason": "external_context_detected",
+    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
+  },
+  "20261009_4": {
+    "session_id": "20261009_4",
+    "last_processed_message_index": 10,
+    "last_processed_hash": "72ed8ccce3354ee0f3d867c40a23b92c748c2d5379ef8354e356286756ff039d",
+    "last_processed_at": "2026-10-10T01:49:20.466820Z",
+    "last_session_updated_at": "2026-10-10T00:41:59Z",
+    "last_skip_reason": "unchanged_since_last_processed",
+    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
+  },
+  "20261009_3": {
+    "session_id": "20261009_3",
+    "last_processed_message_index": 5,
+    "last_processed_hash": "6baed99937acdb2d3c1491fa49bb1441d5feeb6fc90d38d94b64d80d8674f9e3",
+    "last_processed_at": "2026-10-09T16:44:12.346278Z",
+    "last_session_updated_at": "2026-10-09T15:24:28Z",
+    "last_skip_reason": "unchanged_since_last_processed",
+    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
+  },
+  "20261010_17": {
+    "session_id": "20261010_17",
+    "last_processed_message_index": 32,
+    "last_processed_hash": "50869f79cfd38f1981416c8ef6d242d23f207158a1b52e4270b2fce5d0ba403f",
+    "last_processed_at": "2026-10-11T13:49:34.659167Z",
+    "last_session_updated_at": "2026-10-11T13:35:52Z",
+    "last_skip_reason": "unchanged_since_last_processed",
+    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
+  },
+  "20261009_27": {
+    "session_id": "20261009_27",
+    "last_processed_message_index": 24,
+    "last_processed_hash": "d741254eb8271a3845a6b364f01be3f15c3a182f0f4110e00cf22527c4a18730",
+    "last_processed_at": "2026-10-10T23:18:18.033355Z",
+    "last_session_updated_at": "2026-10-10T22:43:10Z",
     "last_skip_reason": "unchanged_since_last_processed",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
@@ -188,41 +197,32 @@
     "last_skip_reason": "unchanged_since_last_processed",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
-  "20261009_42": {
-    "session_id": "20261009_42",
+  "20261012_2": {
+    "session_id": "20261012_2",
     "last_processed_message_index": 0,
-    "last_processed_hash": "a1ae500c9ffe3f21f273baca21b54ac633cc37621da28eb0b78de91eda17fbb2",
-    "last_processed_at": "2026-10-10T00:52:50.630879Z",
-    "last_session_updated_at": "2026-10-10T00:40:01Z",
+    "last_processed_hash": "e52244592872cb5bbd6d3741211c49eb1bc2c56d9e3091d13aff756648afb54f",
+    "last_processed_at": "2026-10-05T07:10:48.862177Z",
+    "last_session_updated_at": "2026-10-12T00:13:14Z",
     "last_skip_reason": "session_too_short",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
-  "20261011_160": {
-    "session_id": "20261011_160",
-    "last_processed_message_index": 0,
-    "last_processed_hash": "ef301baa898af8fa90821a68b3c9567ee87d413addc20694fc848ee003fefe07",
-    "last_processed_at": "2026-10-11T23:48:53.959258Z",
-    "last_session_updated_at": "2026-10-11T23:43:23Z",
-    "last_skip_reason": "session_too_short",
-    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
-  },
-  "20261009_1": {
-    "session_id": "20261009_1",
-    "last_processed_message_index": 4,
-    "last_processed_hash": "19194f1f6516aba19668688ec5902de1c7f0afdfaa905b42f9882752e04855e2",
-    "last_processed_at": "2026-10-09T15:22:34.956635Z",
-    "last_session_updated_at": "2026-10-09T15:07:17Z",
-    "last_skip_reason": null,
-    "last_generation_run_id": "memrun_01a12140efdb73a1a82b9e8eb24f6575"
-  },
-  "20261012_3": {
-    "session_id": "20261012_3",
-    "last_processed_message_index": 4,
-    "last_processed_hash": "ac959f2a1ed83b91897279f47b6432fe95ca03749638fcfa39ed950ba448fa6b",
-    "last_processed_at": "2026-10-12T02:35:01.348111Z",
-    "last_session_updated_at": "2026-10-12T02:29:23Z",
+  "20261009_5": {
+    "session_id": "20261009_5",
+    "last_processed_message_index": 7,
+    "last_processed_hash": "0e58daf54b12755880c9257430a743f70b3aea199ada89a0272765d3012aea6b",
+    "last_processed_at": "2026-10-10T00:42:23.726616Z",
+    "last_session_updated_at": "2026-10-10T00:25:02Z",
     "last_skip_reason": "unchanged_since_last_processed",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
+  },
+  "20261009_15": {
+    "session_id": "20261009_15",
+    "last_processed_message_index": 12,
+    "last_processed_hash": "933cd6163acf8abd513e3eedabcc5bf91ba56df1bcbf7e0ff4cc5d8f801586cd",
+    "last_processed_at": "2026-10-10T13:14:29.878607Z",
+    "last_session_updated_at": "2026-10-10T13:02:45Z",
+    "last_skip_reason": "unchanged_since_last_processed",
+    "last_generation_run_id": "memrun_01a128efd66671518f9c69de31cac005"
   },
   "20261011_117": {
     "session_id": "20261011_117",
@@ -231,15 +231,6 @@
     "last_processed_at": "2026-10-11T08:14:07.973469Z",
     "last_session_updated_at": "2026-10-11T07:51:10Z",
     "last_skip_reason": "unchanged_since_last_processed",
-    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
-  },
-  "20261012_1": {
-    "session_id": "20261012_1",
-    "last_processed_message_index": 0,
-    "last_processed_hash": "8f34771a7d5c7a5fbb8532f8198eb5cdf7e2320c02ea023f7a40fe0dc57b93d3",
-    "last_processed_at": "2026-10-12T00:07:01.317615Z",
-    "last_session_updated_at": "2026-10-12T00:00:27Z",
-    "last_skip_reason": "session_too_short",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
   "20261010_10": {
@@ -251,13 +242,31 @@
     "last_skip_reason": "unchanged_since_last_processed",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   },
-  "20261010_17": {
-    "session_id": "20261010_17",
-    "last_processed_message_index": 32,
-    "last_processed_hash": "50869f79cfd38f1981416c8ef6d242d23f207158a1b52e4270b2fce5d0ba403f",
-    "last_processed_at": "2026-10-11T13:49:34.659167Z",
-    "last_session_updated_at": "2026-10-11T13:35:52Z",
+  "20261009_9": {
+    "session_id": "20261009_9",
+    "last_processed_message_index": 11,
+    "last_processed_hash": "cd7fc98cc39f5398e2be4e12b73d4f18ecaf38da9882382f7dc221fc48f2cb29",
+    "last_processed_at": "2026-10-10T01:15:12.593171Z",
+    "last_session_updated_at": "2026-10-10T00:52:03Z",
     "last_skip_reason": "unchanged_since_last_processed",
+    "last_generation_run_id": "memrun_01a128efd66671518f9c69de31cac005"
+  },
+  "20261011_163": {
+    "session_id": "20261011_163",
+    "last_processed_message_index": 0,
+    "last_processed_hash": "fcd22ddf7414736443369637a2555427d1d661b3fd2c878ad2ae49b19a451baa",
+    "last_processed_at": "2026-10-05T07:10:48.862172Z",
+    "last_session_updated_at": "2026-10-11T23:55:13Z",
+    "last_skip_reason": "session_too_short",
+    "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
+  },
+  "20261012_4": {
+    "session_id": "20261012_4",
+    "last_processed_message_index": 8,
+    "last_processed_hash": "b214af7a54a7c3b5ac601938159cc63aa5e18c9d830e473c2ad56161bf85d37d",
+    "last_processed_at": "2026-10-12T05:49:11.257842Z",
+    "last_session_updated_at": "2026-10-12T05:27:53Z",
+    "last_skip_reason": "session_active_recently",
     "last_generation_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b"
   }
 }

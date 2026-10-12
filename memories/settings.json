@@ -4,7 +4,7 @@
   "generate_memories": true,
   "require_preview_before_apply": true,
   "include_workspace_memories": true,
-  "disable_generation_on_external_context": true,
+  "disable_generation_on_external_context": false,
   "min_rate_limit_remaining_percent": 20,
   "extract_model": null,
   "consolidation_model": null,

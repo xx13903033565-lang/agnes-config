@@ -16,7 +16,7 @@ extensions:
     display_name: Extension Manager
     bundled: true
   dingtalk:
-    enabled: false
+    enabled: true
     type: platform
     name: DingTalk
     description: Operate DingTalk products through the official DingTalk Workspace CLI Skills
@@ -45,7 +45,7 @@ extensions:
     display_name: Summon
     bundled: true
   orchestrator:
-    enabled: false
+    enabled: true
     type: platform
     name: orchestrator
     description: 'Manage agent sessions: list, view, start, send messages, interrupt, and stop agents'
@@ -331,10 +331,16 @@ extensions:
     display_name: Code Mode
     bundled: false
 AGNES_MODEL_LIMITS:
-  deepseek-v4.1-flash:
+  agnes-2.5-pro:
+    max_input_tokens: 512000
+    max_output_tokens: 65536
+  agnes-3.0-flash:
+    max_input_tokens: 512000
+    max_output_tokens: 65536
+  deepseek-v4-pro:
     max_input_tokens: 1000000
     max_output_tokens: 393216
-  agnes-3.0-flash:
+  auto:
     max_input_tokens: 512000
     max_output_tokens: 65536
   agnes-2.5-flash:
@@ -343,18 +349,12 @@ AGNES_MODEL_LIMITS:
   glm-5.2:
     max_input_tokens: 1000000
     max_output_tokens: 131072
+  deepseek-v4.1-flash:
+    max_input_tokens: 1000000
+    max_output_tokens: 393216
   kimi-k3:
     max_input_tokens: 1048576
     max_output_tokens: 131072
-  deepseek-v4-pro:
-    max_input_tokens: 1000000
-    max_output_tokens: 393216
-  auto:
-    max_input_tokens: 512000
-    max_output_tokens: 65536
-  agnes-2.5-pro:
-    max_input_tokens: 512000
-    max_output_tokens: 65536
 active_provider: agnes
 providers:
   agnes:
@@ -366,8 +366,8 @@ providers:
       backoff_multiplier: 2
       initial_delay_ms: 1000
     keepalive_interval_seconds: 30
-AGNES_MAX_TURNS: 50
-AGNES_MAX_CONCURRENT_TASKS: 3
+AGNES_MAX_TURNS: 200
+AGNES_MAX_CONCURRENT_TASKS: 2
 AGNES_MEMORY_LIMIT_MB: 2048
 AGNES_GC_INTERVAL_SECONDS: 300
 AGNES_V8_FLAGS: --max-old-space-size=2048 --optimize-for-size --gc-interval=100
@@ -381,14 +381,14 @@ AGNES_TERMINAL_TIMEOUT: 30
 AGNES_TERMINAL_WHITELIST: /Users/billtse/.agnes/tools/whitelist.txt
 AGNES_RECIPE_PATH: /Users/billtse/.agnes/recipes
 AGNES_MODEL_AUTO_COMPACT_THRESHOLDS:
-  agnes-3.0-flash: 0.6
-  agnes-2.5-flash: 0.6
-  auto: 0.8
   kimi-k3: 0.8
-  deepseek-v4.1-flash: 0.8
   deepseek-v4-pro: 0.8
-  agnes-2.5-pro: 0.6
+  auto: 0.8
   glm-5.2: 0.8
+  agnes-2.5-flash: 0.6
+  deepseek-v4.1-flash: 0.8
+  agnes-3.0-flash: 0.6
+  agnes-2.5-pro: 0.6
 connected_app_runtime_revisions:
   figma: 1
   notion: 1

@@ -1,143 +1,133 @@
 {
   "enabled": true,
   "running": false,
-  "last_scan_at": "2026-10-12T07:06:59.759789Z",
-  "next_scan_at": "2026-10-12T07:16:59.759241Z",
-  "last_run_id": "memrun_01a12eefa52f7282b1c84df6513e866b",
+  "last_scan_at": "2026-10-12T08:11:52.962903Z",
+  "next_scan_at": "2026-10-12T08:21:52.962556Z",
+  "last_run_id": "memrun_01a12f2b0d0272c3b3307a45bf7951f6",
   "last_error": null,
-  "scanned_sessions": 25,
+  "scanned_sessions": 1,
   "eligible_sessions": 0,
-  "skipped_sessions": 25,
+  "skipped_sessions": 1,
   "created_pending": 0,
   "created_active": 0,
   "recent_skips": [
     {
-      "session_id": "20261012_4",
+      "session_id": "20261012_24",
       "reason": "session_active_recently",
-      "detail": "updated_at=2026-10-12T07:04:10+00:00"
-    },
-    {
-      "session_id": "20261012_3",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261012_2",
-      "reason": "session_too_short",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261012_1",
-      "reason": "session_too_short",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261011_163",
-      "reason": "session_too_short",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261011_162",
-      "reason": "session_too_short",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261011_161",
-      "reason": "session_too_short",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261011_160",
-      "reason": "session_too_short",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261011_159",
-      "reason": "session_too_short",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261011_32",
-      "reason": "external_context_detected",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261011_64",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261011_121",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261010_17",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261011_117",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261011_13",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261011_33",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261009_27",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261010_10",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261009_13",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261009_11",
-      "reason": "external_context_detected",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261009_2",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261009_4",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261009_42",
-      "reason": "session_too_short",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261009_5",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
-    },
-    {
-      "session_id": "20261009_3",
-      "reason": "unchanged_since_last_processed",
-      "detail": "Session metadata is unchanged since the previous scan"
+      "detail": "updated_at=2026-10-12T08:11:06+00:00"
     }
   ],
   "recent_runs": [
+    {
+      "run_id": "memrun_01a12f2b0d0272c3b3307a45bf7951f6",
+      "started_at": "2026-10-12T08:11:52.962903Z",
+      "finished_at": "2026-10-12T08:11:52.983701Z",
+      "scanned_sessions": 1,
+      "eligible_sessions": 0,
+      "skipped_sessions": 1,
+      "created_pending": [],
+      "created_active": [],
+      "skipped_candidates": [],
+      "skip_reasons": [
+        {
+          "session_id": "20261012_24",
+          "reason": "session_active_recently",
+          "detail": "updated_at=2026-10-12T08:11:06+00:00"
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "run_id": "memrun_01a12f20e42b73a2a812ef1dfe94473a",
+      "started_at": "2026-10-12T08:00:47.147022Z",
+      "finished_at": "2026-10-12T08:01:52.936056Z",
+      "scanned_sessions": 1,
+      "eligible_sessions": 1,
+      "skipped_sessions": 0,
+      "created_pending": [
+        "mem_01a12f21e5127853962fbab381a49c1e"
+      ],
+      "created_active": [],
+      "skipped_candidates": [],
+      "skip_reasons": [],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "run_id": "memrun_01a12f17bc0874a380c66bd7c757757d",
+      "started_at": "2026-10-12T07:50:47.048611Z",
+      "finished_at": "2026-10-12T07:50:47.071452Z",
+      "scanned_sessions": 1,
+      "eligible_sessions": 0,
+      "skipped_sessions": 1,
+      "created_pending": [],
+      "created_active": [],
+      "skipped_candidates": [],
+      "skip_reasons": [
+        {
+          "session_id": "20261012_24",
+          "reason": "session_active_recently",
+          "detail": "updated_at=2026-10-12T07:48:22+00:00"
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "run_id": "memrun_01a12f08cd6373e3bd2fa024a8c3a10b",
+      "started_at": "2026-10-12T07:34:28.451827Z",
+      "finished_at": "2026-10-12T07:34:28.471136Z",
+      "scanned_sessions": 1,
+      "eligible_sessions": 0,
+      "skipped_sessions": 1,
+      "created_pending": [],
+      "created_active": [],
+      "skipped_candidates": [],
+      "skip_reasons": [
+        {
+          "session_id": "20261012_24",
+          "reason": "session_active_recently",
+          "detail": "updated_at=2026-10-12T07:30:14+00:00"
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "run_id": "memrun_01a12effa5757a9395b005f92363ab90",
+      "started_at": "2026-10-12T07:24:28.405071Z",
+      "finished_at": "2026-10-12T07:24:28.430719Z",
+      "scanned_sessions": 1,
+      "eligible_sessions": 0,
+      "skipped_sessions": 1,
+      "created_pending": [],
+      "created_active": [],
+      "skipped_candidates": [],
+      "skip_reasons": [
+        {
+          "session_id": "20261012_24",
+          "reason": "session_active_recently",
+          "detail": "updated_at=2026-10-12T07:23:46+00:00"
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "run_id": "memrun_01a12ef67d4871d18b01452e6bb5a281",
+      "started_at": "2026-10-12T07:14:28.296343Z",
+      "finished_at": "2026-10-12T07:14:28.309673Z",
+      "scanned_sessions": 0,
+      "eligible_sessions": 0,
+      "skipped_sessions": 0,
+      "created_pending": [],
+      "created_active": [],
+      "skipped_candidates": [],
+      "skip_reasons": [],
+      "warnings": [],
+      "error": null
+    },
     {
       "run_id": "memrun_01a12eefa52f7282b1c84df6513e866b",
       "started_at": "2026-10-12T07:06:59.759789Z",
@@ -696,847 +686,6 @@
         }
       ],
       "warnings": [],
-      "error": null
-    },
-    {
-      "run_id": "memrun_01a12ecafcf876538d201b738603cbf1",
-      "started_at": "2026-10-12T06:26:57.400244Z",
-      "finished_at": "2026-10-12T06:26:57.602321Z",
-      "scanned_sessions": 25,
-      "eligible_sessions": 0,
-      "skipped_sessions": 25,
-      "created_pending": [],
-      "created_active": [],
-      "skipped_candidates": [],
-      "skip_reasons": [
-        {
-          "session_id": "20261012_4",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_3",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_2",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_1",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_163",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_162",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_161",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_160",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_159",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_32",
-          "reason": "external_context_detected",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_64",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_121",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261010_17",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_117",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_13",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_33",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_27",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261010_10",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_13",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_11",
-          "reason": "external_context_detected",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_2",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_4",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_42",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_5",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_3",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        }
-      ],
-      "warnings": [],
-      "error": null
-    },
-    {
-      "run_id": "memrun_01a12ec1d30879009b2d7a1f5b1dacab",
-      "started_at": "2026-10-12T06:16:56.840686Z",
-      "finished_at": "2026-10-12T06:16:57.055192Z",
-      "scanned_sessions": 25,
-      "eligible_sessions": 0,
-      "skipped_sessions": 25,
-      "created_pending": [],
-      "created_active": [],
-      "skipped_candidates": [],
-      "skip_reasons": [
-        {
-          "session_id": "20261012_4",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_3",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_2",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_1",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_163",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_162",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_161",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_160",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_159",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_32",
-          "reason": "external_context_detected",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_64",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_121",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261010_17",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_117",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_13",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_33",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_27",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261010_10",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_13",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_11",
-          "reason": "external_context_detected",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_2",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_4",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_42",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_5",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_3",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        }
-      ],
-      "warnings": [],
-      "error": null
-    },
-    {
-      "run_id": "memrun_01a12eb8a8e077b1afabbd5e16d935cc",
-      "started_at": "2026-10-12T06:06:56.224322Z",
-      "finished_at": "2026-10-12T06:06:56.415489Z",
-      "scanned_sessions": 25,
-      "eligible_sessions": 0,
-      "skipped_sessions": 25,
-      "created_pending": [],
-      "created_active": [],
-      "skipped_candidates": [],
-      "skip_reasons": [
-        {
-          "session_id": "20261012_4",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_3",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_2",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_1",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_163",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_162",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_161",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_160",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_159",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_32",
-          "reason": "external_context_detected",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_64",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_121",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261010_17",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_117",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_13",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_33",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_27",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261010_10",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_13",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_11",
-          "reason": "external_context_detected",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_2",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_4",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_42",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_5",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_3",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        }
-      ],
-      "warnings": [],
-      "error": null
-    },
-    {
-      "run_id": "memrun_01a12eb1928875a0ab791ea33432664f",
-      "started_at": "2026-10-12T05:59:11.752983Z",
-      "finished_at": "2026-10-12T05:59:11.951434Z",
-      "scanned_sessions": 25,
-      "eligible_sessions": 0,
-      "skipped_sessions": 25,
-      "created_pending": [],
-      "created_active": [],
-      "skipped_candidates": [],
-      "skip_reasons": [
-        {
-          "session_id": "20261012_4",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_3",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_2",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_1",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_163",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_162",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_161",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_160",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_159",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_32",
-          "reason": "external_context_detected",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_64",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_121",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261010_17",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_117",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_13",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_33",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_27",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261010_10",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_13",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_11",
-          "reason": "external_context_detected",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_2",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_4",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_42",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_5",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_3",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        }
-      ],
-      "warnings": [],
-      "error": null
-    },
-    {
-      "run_id": "memrun_01a12ea8012c71639dd2e0be3ed03d06",
-      "started_at": "2026-10-12T05:48:44.716674Z",
-      "finished_at": "2026-10-12T05:49:11.455075Z",
-      "scanned_sessions": 25,
-      "eligible_sessions": 1,
-      "skipped_sessions": 24,
-      "created_pending": [
-        "mem_01a12ea868be7aa0916293e6767a08a2",
-        "mem_01a12ea868c9753080b273bbba091eec",
-        "mem_01a12ea868d17222840c3924c85dea9b"
-      ],
-      "created_active": [],
-      "skipped_candidates": [],
-      "skip_reasons": [
-        {
-          "session_id": "20261012_3",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_2",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_1",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_163",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_162",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_161",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_160",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_159",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_32",
-          "reason": "external_context_detected",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_64",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_121",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261010_17",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_117",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_13",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_33",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_27",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261010_10",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_13",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_11",
-          "reason": "external_context_detected",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_2",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_4",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_42",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_5",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_3",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        }
-      ],
-      "warnings": [],
-      "error": null
-    },
-    {
-      "run_id": "memrun_01a12e9e6fe67cd290bad7e016705b31",
-      "started_at": "2026-10-12T05:38:17.702949Z",
-      "finished_at": "2026-10-12T05:38:44.468088Z",
-      "scanned_sessions": 25,
-      "eligible_sessions": 1,
-      "skipped_sessions": 25,
-      "created_pending": [],
-      "created_active": [],
-      "skipped_candidates": [],
-      "skip_reasons": [
-        {
-          "session_id": "20261012_4",
-          "reason": "extraction_failed",
-          "detail": "trailing characters at line 8 column 4"
-        },
-        {
-          "session_id": "20261012_3",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_2",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261012_1",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_163",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_162",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_161",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_160",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_159",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_32",
-          "reason": "external_context_detected",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_64",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_121",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261010_17",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_117",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_13",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261011_33",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_27",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261010_10",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_13",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_11",
-          "reason": "external_context_detected",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_2",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_4",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_42",
-          "reason": "session_too_short",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_5",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        },
-        {
-          "session_id": "20261009_3",
-          "reason": "unchanged_since_last_processed",
-          "detail": "Session metadata is unchanged since the previous scan"
-        }
-      ],
-      "warnings": [
-        "Model extraction failed for 20261012_4: trailing characters at line 8 column 4; skipping automatic generation"
-      ],
       "error": null
     }
   ]
