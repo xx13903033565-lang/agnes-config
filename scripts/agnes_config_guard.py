@@ -379,17 +379,19 @@ def cmd_audit():
                     fname = n.func.id if isinstance(n.func, ast.Name) else getattr(n.func, "attr", "")
                     if fname not in ("open", "write_text", "write_bytes"):
                         continue
-                    mode = "w"
-                    args = [a for a in n.args]
-                    if fname == "open" and len(args) >= 2 and isinstance(args[1], ast.Constant):
-                        mode = str(args[1].value)
+                    # 取 mode：先看关键字参数，再看位置参数（只针对 write_text/write_bytes）
+                    mode = None
                     for kw in n.keywords:
                         if kw.arg == "mode" and isinstance(kw.value, ast.Constant):
                             mode = str(kw.value.value)
-                    if "w" not in mode and "a" not in mode and fname in ("write_text", "write_bytes"):
+                            break
+                    if mode is None and fname in ("write_text", "write_bytes"):
                         mode = "w"
+                    if mode is None:
+                        continue  # open() 没给 mode＝默认只读，跳过
                     if "w" not in mode and "a" not in mode:
                         continue
+                    args = [a for a in n.args]
                     var = ""
                     if args and isinstance(args[0], ast.Name):
                         var = args[0].id
